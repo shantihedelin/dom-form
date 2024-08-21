@@ -6,7 +6,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 200px;
-  color: rgb(red, green, blue);
+  color: rgb(200, 200, 200);
 }
 
 input {
