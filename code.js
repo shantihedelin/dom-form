@@ -36,24 +36,3 @@ form.addEventListener("submit", function (event) {
   emailFieldEl.value = "";
   textFieldEl.value = "";
 });
-
-function validateInput() {
-  // Läs in värdena i inputfälten
-  const nameValue = nameFieldEl.value;
-  const emailValue = emailFieldEl.value;
-  const textValue = textFieldEl.value;
-
-  sendBtnElement.addEventListener("click", function () {
-    // Ta bort meddelandet när knappen klickas
-    errorMessageEl.remove();
-    // Rensa inputfälten
-    nameFieldEl.value = "";
-    emailFieldEl.value = "";
-    textFieldEl.value = "";
-    // Lämna formuläret tom
-    document.getElementById("myForm").reset();
-    // Lägg till ett nytt meddelande om formuläret har skickats
-    errorMessageEl.textContent = "Form submitted successfully!";
-    document.body.appendChild(errorMessageEl);
-  });
-}
